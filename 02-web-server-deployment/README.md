@@ -14,11 +14,33 @@ Deploy a website using Apache on Ubuntu.
 
 ## Commands Used
 
-(Include commands)
+- Installed Apache (sudo apt install apache2 -y)
+- Checked Apache status (sudo systemctl status apache2)
+- Created website folders (sudo mkdir -p /var/www/company-site)
+- Created HTML page (sudo nano /var/www/company-site/index.html)
+- Set permissions (sudo chown -R $USER:$USER /var/www/company-site)
+- Create virtual host file (sudo nano /etc/apache2/sites-available/company-site.conf)
+- Enable your site (sudo a2ensite company-site.conf)
+- Disable default Apache page (sudo a2dissite 000-default.conf)
+- Restart Apache (sudo systemctl restart apache2)
+- Checked firewall rules (sudo ufw allow 'Apache', and sudo ufw status)
+- Enable SSL (sudo a2emod ssl)
+- Create SSL certificate
+ (sudo openssl req -x509 -nodes -days 365 \
+ -newkey rsa:2048 \
+ -keyout /etc/ssl/private/company.key \
+ -out /etc/ssl/certs/company.crt)
+
 
 ## Configuration
 
-(Include company-site conf)
+The Apache Virtual host was configured to serve a custom website from:
+
+/var/www/company-site
+
+The configuration file:
+
+/etc/apache2/sites-available/company-site.conf
 
 ## Verification
 
