@@ -1,4 +1,4 @@
-##Objectives
+## Objectives
 - Install SSH Server
 - Configure SSH keys
 - Disable password authentication
