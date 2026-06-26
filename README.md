@@ -179,8 +179,7 @@ Automate system backups using Bash and Cron.
 ## Cron Job
 
 ```cron
-0 2 * * * /home/ubuntu/linux-sysadmin-portfolio/project-04-backup-script/back
-up.sh >> /home/ubuntu/backup.log 2>&1
+0 2 * * * /home/ubuntu/linux-sysadmin-portfolio/project-04-backup-script/backup.sh >> /home/ubuntu/backup.log 2>&1
 ```
 
 ## Screenshots
@@ -374,4 +373,4 @@ Siyonwaba 'Ta Siyo' Mlamla
 
 Linux System Administration Portfolio
 
-GitHub: https://github.com/Ta-Siyo
+GitHub: https://github.com/Ta-Siyo/linux-sysadmin-portfolio
